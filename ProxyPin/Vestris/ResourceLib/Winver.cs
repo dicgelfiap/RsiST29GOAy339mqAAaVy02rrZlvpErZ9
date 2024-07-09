@@ -1,0 +1,127 @@
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace Vestris.ResourceLib
+{
+	// Token: 0x02000D3E RID: 3390
+	[ComVisible(true)]
+	public abstract class Winver
+	{
+		// Token: 0x04003EE0 RID: 16096
+		public const uint VS_FFI_SIGNATURE = 4277077181U;
+
+		// Token: 0x04003EE1 RID: 16097
+		public const uint VS_FFI_STRUCVERSION = 65536U;
+
+		// Token: 0x04003EE2 RID: 16098
+		public const uint VS_FFI_FILEFLAGSMASK = 63U;
+
+		// Token: 0x02001204 RID: 4612
+		public enum FileFlags : uint
+		{
+			// Token: 0x04004EC2 RID: 20162
+			VS_FF_DEBUG = 1U,
+			// Token: 0x04004EC3 RID: 20163
+			VS_FF_PRERELEASE,
+			// Token: 0x04004EC4 RID: 20164
+			VS_FF_PATCHED = 4U,
+			// Token: 0x04004EC5 RID: 20165
+			VS_FF_PRIVATEBUILD = 8U,
+			// Token: 0x04004EC6 RID: 20166
+			VS_FF_INFOINFERRED = 16U,
+			// Token: 0x04004EC7 RID: 20167
+			VS_FF_SPECIALBUILD = 32U
+		}
+
+		// Token: 0x02001205 RID: 4613
+		public enum FileOs : uint
+		{
+			// Token: 0x04004EC9 RID: 20169
+			VOS_UNKNOWN,
+			// Token: 0x04004ECA RID: 20170
+			VOS_DOS = 65536U,
+			// Token: 0x04004ECB RID: 20171
+			VOS_OS216 = 131072U,
+			// Token: 0x04004ECC RID: 20172
+			VOS_OS232 = 196608U,
+			// Token: 0x04004ECD RID: 20173
+			VOS_NT = 262144U,
+			// Token: 0x04004ECE RID: 20174
+			VOS_WINCE = 327680U,
+			// Token: 0x04004ECF RID: 20175
+			VOS__WINDOWS16 = 1U,
+			// Token: 0x04004ED0 RID: 20176
+			VOS__PM16,
+			// Token: 0x04004ED1 RID: 20177
+			VOS__PM32,
+			// Token: 0x04004ED2 RID: 20178
+			VOS__WINDOWS32,
+			// Token: 0x04004ED3 RID: 20179
+			VOS_DOS_WINDOWS16 = 65537U,
+			// Token: 0x04004ED4 RID: 20180
+			VOS_DOS_WINDOWS32 = 65540U,
+			// Token: 0x04004ED5 RID: 20181
+			VOS_OS216_PM16 = 131074U,
+			// Token: 0x04004ED6 RID: 20182
+			VOS_OS232_PM32 = 196611U,
+			// Token: 0x04004ED7 RID: 20183
+			VOS_NT_WINDOWS32 = 262148U
+		}
+
+		// Token: 0x02001206 RID: 4614
+		public enum FileType : uint
+		{
+			// Token: 0x04004ED9 RID: 20185
+			VFT_UNKNOWN,
+			// Token: 0x04004EDA RID: 20186
+			VFT_APP,
+			// Token: 0x04004EDB RID: 20187
+			VFT_DLL,
+			// Token: 0x04004EDC RID: 20188
+			VFT_DRV,
+			// Token: 0x04004EDD RID: 20189
+			VFT_FONT,
+			// Token: 0x04004EDE RID: 20190
+			VFT_VXD,
+			// Token: 0x04004EDF RID: 20191
+			VFT_STATIC_LIB = 7U
+		}
+
+		// Token: 0x02001207 RID: 4615
+		public enum FileSubType : uint
+		{
+			// Token: 0x04004EE1 RID: 20193
+			VFT2_UNKNOWN,
+			// Token: 0x04004EE2 RID: 20194
+			VFT2_DRV_PRINTER,
+			// Token: 0x04004EE3 RID: 20195
+			VFT2_DRV_KEYBOARD,
+			// Token: 0x04004EE4 RID: 20196
+			VFT2_DRV_LANGUAGE,
+			// Token: 0x04004EE5 RID: 20197
+			VFT2_DRV_DISPLAY,
+			// Token: 0x04004EE6 RID: 20198
+			VFT2_DRV_MOUSE,
+			// Token: 0x04004EE7 RID: 20199
+			VFT2_DRV_NETWORK,
+			// Token: 0x04004EE8 RID: 20200
+			VFT2_DRV_SYSTEM,
+			// Token: 0x04004EE9 RID: 20201
+			VFT2_DRV_INSTALLABLE,
+			// Token: 0x04004EEA RID: 20202
+			VFT2_DRV_SOUND,
+			// Token: 0x04004EEB RID: 20203
+			VFT2_DRV_COMM,
+			// Token: 0x04004EEC RID: 20204
+			VFT2_DRV_INPUTMETHOD,
+			// Token: 0x04004EED RID: 20205
+			VFT2_DRV_VERSIONED_PRINTER,
+			// Token: 0x04004EEE RID: 20206
+			VFT2_FONT_RASTER = 1U,
+			// Token: 0x04004EEF RID: 20207
+			VFT2_FONT_VECTOR,
+			// Token: 0x04004EF0 RID: 20208
+			VFT2_FONT_TRUETYPE
+		}
+	}
+}

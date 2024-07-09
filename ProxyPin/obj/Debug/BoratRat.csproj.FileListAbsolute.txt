@@ -1,0 +1,2 @@
+D:\Users\Adminstrator\Desktop\ProxyPin\obj\Debug\BoratRat.csproj.AssemblyReference.cache
+D:\Users\Adminstrator\Desktop\ProxyPin\obj\Debug\BoratRat.csproj.CoreCompileInputs.cache

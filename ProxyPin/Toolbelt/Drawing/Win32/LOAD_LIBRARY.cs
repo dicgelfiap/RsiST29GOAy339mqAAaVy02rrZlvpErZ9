@@ -1,0 +1,22 @@
+﻿using System;
+
+namespace Toolbelt.Drawing.Win32
+{
+	// Token: 0x020000BD RID: 189
+	[Flags]
+	internal enum LOAD_LIBRARY : uint
+	{
+		// Token: 0x04000560 RID: 1376
+		DONT_RESOLVE_DLL_REFERENCES = 1U,
+		// Token: 0x04000561 RID: 1377
+		IGNORE_CODE_AUTHZ_LEVEL = 16U,
+		// Token: 0x04000562 RID: 1378
+		AS_DATAFILE = 2U,
+		// Token: 0x04000563 RID: 1379
+		AS_DATAFILE_EXCLUSIVE = 64U,
+		// Token: 0x04000564 RID: 1380
+		AS_IMAGE_RESOURCE = 32U,
+		// Token: 0x04000565 RID: 1381
+		WITH_ALTERED_SEARCH_PATH = 8U
+	}
+}

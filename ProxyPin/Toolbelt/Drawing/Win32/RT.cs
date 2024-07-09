@@ -1,0 +1,51 @@
+﻿using System;
+
+namespace Toolbelt.Drawing.Win32
+{
+	// Token: 0x020000BE RID: 190
+	internal enum RT
+	{
+		// Token: 0x04000567 RID: 1383
+		CURSOR = 1,
+		// Token: 0x04000568 RID: 1384
+		BITMAP,
+		// Token: 0x04000569 RID: 1385
+		ICON,
+		// Token: 0x0400056A RID: 1386
+		MENU,
+		// Token: 0x0400056B RID: 1387
+		DIALOG,
+		// Token: 0x0400056C RID: 1388
+		STRING,
+		// Token: 0x0400056D RID: 1389
+		FONTDIR,
+		// Token: 0x0400056E RID: 1390
+		FONT,
+		// Token: 0x0400056F RID: 1391
+		ACCELERATOR,
+		// Token: 0x04000570 RID: 1392
+		RCDATA,
+		// Token: 0x04000571 RID: 1393
+		MESSAGETABLE,
+		// Token: 0x04000572 RID: 1394
+		GROUP_CURSOR,
+		// Token: 0x04000573 RID: 1395
+		GROUP_ICON = 14,
+		// Token: 0x04000574 RID: 1396
+		VERSION = 16,
+		// Token: 0x04000575 RID: 1397
+		DLGINCLUDE,
+		// Token: 0x04000576 RID: 1398
+		PLUGPLAY = 19,
+		// Token: 0x04000577 RID: 1399
+		VXD,
+		// Token: 0x04000578 RID: 1400
+		ANICURSOR,
+		// Token: 0x04000579 RID: 1401
+		ANIICON,
+		// Token: 0x0400057A RID: 1402
+		HTML,
+		// Token: 0x0400057B RID: 1403
+		MANIFEST
+	}
+}
