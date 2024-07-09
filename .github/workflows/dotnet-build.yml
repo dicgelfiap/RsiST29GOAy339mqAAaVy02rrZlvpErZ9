@@ -16,17 +16,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '4.8.x'
-
     - name: Install .NET Framework 4.8 SDK
       run: |
         choco install dotnetfx --version=4.8.0.0
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Setup NuGet
+      run: |
+        nuget restore ./ProxyPin/BoratRat.csproj
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build ./ProxyPin/BoratRat.csproj --configuration Release
